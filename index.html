@@ -9,107 +9,114 @@
 </head>
 
 <body>
-  <header>
-    <button>Вход/ Регистрация</button>
-    <img src="images/книги.png" alt="Логотип" width="250" length="250">
-    <img src="images/arc.webp" alt="Логотип" width="350" length="250">
-    <img src="images/russia.png" alt="Логотип" width="250" length="150">
+  <header class="header">
+    <button class="header__button button">Вход/ Регистрация</button>
+    <img class="header__image" src="images/books.png" alt="Логотип" width="250" length="250">
+    <img class="header__image" src="images/arc.webp" alt="Логотип" width="350" length="250">
+    <img class="header__image" src="images/russia.png" alt="Логотип" width="250" length="150">
     <nav>
       <ul>
         <li><a href="#">Выберите язык</a> </li>
         <li><a href="#">Главная</a></li>
       </ul>
     </nav>
-    <p>Данный словарь поможет вам в изучении немецкого языка, сократит ваше время на поиск необходимых слов в переводе
+    <p class="header__text">Данный словарь поможет вам в изучении немецкого языка, сократит ваше время на поиск необходимых слов в переводе
       как с русского на немецкий, так и с немецкого на русский</p>
   </header>
-  <main>
-    <section>
-      <h1>Словарь немецко-русского языка</h1>
-      <input type="search">
+
+  <main class="main">
+    <section class="welcome">
+      <h1 class="welcome__title">Словарь немецко-русского языка</h1>
+      <input class="welcome__button button" type="search" name="name" placeholder="Поиск слова" required>
     </section>
-    <section>
-      <ul>
-        <li>
-          <h2>История немецкого языка</h2>
-          <p>Немецкий язык восходит к прагерманскому языку, который, в свою очередь, является ответвлением праиндоевропейского. Изменение фонетической и морфологической систем немецкого языка в результате второго передвижения согласных привело к его обособлению от родственных германских языков.</p>
+    <section class="history">
+      <ul class="history__list">
+        <li class="history__item">
+          <h2 class="history__title">История немецкого языка</h2>
+          <p class="history__text">Немецкий язык восходит к прагерманскому языку, который, в свою очередь, является ответвлением
+            праиндоевропейского. Изменение фонетической и морфологической систем немецкого языка в результате второго
+            передвижения согласных привело к его обособлению от родственных германских языков.</p>
         </li>
-        <li>
-          <h2>История русского языка</h2>
-          <p>Русский язык начал выделяться из числа других восточнославянских языков приблизительно в ХIV-XV вв. Язык, бытовавший на территории Европейской части России того времени, принято называть старорусским языком. Он является предком только русского языка, не включая украинский и белорусский языки.</p>
+        <li class="history__item">
+          <h2 class="history__title">История русского языка</h2>
+          <p class="history__text">Русский язык начал выделяться из числа других восточнославянских языков приблизительно в ХIV-XV вв. Язык,
+            бытовавший на территории Европейской части России того времени, принято называть старорусским языком. Он
+            является предком только русского языка, не включая украинский и белорусский языки.</p>
         </li>
-        </ul>
-         
+      </ul>
     </section>
-    <div>
-       <h2>Топ пять самых длинных немецких слов</h2>
-       <ol>
-        <li>67 букв: Grundstücksverkehrsgenehmigungs zuständigkeitsübertragungsverordnung.
-      Постановление о передаче обязанностей по правовым сделкам, связанным с земельными участками</li>
-      <li>64 буквы: Rindfleischetickettierungsüberwachungs aufgabenübertragungsgesetz.  
-      Закон о передаче обязанностей контроля маркировки говядины</li>
-      <li>46 букв: Verkehrsinfrastruktur finanzierungsgesellschaft.  
-      Компания (общество) по финансированию транспортной инфраструктуры</li>
-      <li>44 буквы: Gleichgewichtsdichte gradientenzentrifugation. 
-      Равновесное центрифугирование в градиенте плотности</li>
-      <li>43 буквы: Elektrizitätswirtschafts organisationsgesetz. 
-      Закон об организации электроэнергетики</li>
-       </ol>
-    </div>
-  <div>
-    <h2>Топ пять самых длинных русских слов</h2>
-    <ol>
-      <li>35 букв: превысокомногорассмотрительствующий.
-      Это самое длинное слово в русском языке согласно Книге рекордов Гиннесса.</li>
-      <li>29 букв: водогрязеторфопарафинолечение.
-      Самое длинное слово согласно орфографическому словарю РАН.</li>
-      <li>24 буквы: человеконенавистничество и высокопревосходительство.
-      Самые длинные существительные в русском языке.</li>
-      <li>21 буква: делопроизводительница.
-      Самое длинное одушевленное существительное.</li>
-      <li>18 букв: неудовлетворительно.
-      Самое длинное наречие, фиксируемое словарём.</li>
-    </ol>
-  </div>
-     
-    <section>
-      <button type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
-      <h2>Регистрация</h2>
+    
+    <section class="top">
+      <h2 class="top__title">Топ пять самых длинных немецких слов</h2>
+      <ol class="top__list">
+        <li class="top__item">67 букв: Grundstücksverkehrsgenehmigungs zuständigkeitsübertragungsverordnung.
+          Постановление о передаче обязанностей по правовым сделкам, связанным с земельными участками</li>
+        <li class="top__item">64 буквы: Rindfleischetickettierungsüberwachungs aufgabenübertragungsgesetz.
+          Закон о передаче обязанностей контроля маркировки говядины</li>
+        <li class="top__item">46 букв: Verkehrsinfrastruktur finanzierungsgesellschaft.
+          Компания (общество) по финансированию транспортной инфраструктуры</li>
+        <li class="top__item">44 буквы: Gleichgewichtsdichte gradientenzentrifugation.
+          Равновесное центрифугирование в градиенте плотности</li>
+        <li class="top__item">43 буквы: Elektrizitätswirtschafts organisationsgesetz.
+          Закон об организации электроэнергетики</li>
+      </ol>
+    </section>
+    <section class="words">
+      <h2 class="words__title">Топ пять самых длинных русских слов</h2>
+      <ol class="words__list">
+        <li class="words__item">35 букв: превысокомногорассмотрительствующий.
+          Это самое длинное слово в русском языке согласно Книге рекордов Гиннесса.</li>
+        <li class="words__item">29 букв: водогрязеторфопарафинолечение.
+          Самое длинное слово согласно орфографическому словарю РАН.</li>
+        <li class="words__item">24 буквы: человеконенавистничество и высокопревосходительство.
+          Самые длинные существительные в русском языке.</li>
+        <li class="words__item">21 буква: делопроизводительница.
+          Самое длинное одушевленное существительное.</li>
+        <li class="words__item">18 букв: неудовлетворительно.
+          Самое длинное наречие, фиксируемое словарём.</li>
+      </ol>
+    </section>
+
+    <section class="registration">
+      <button class="button" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+      <h2 class="registration__title">Регистрация</h2>
       <form action="/" method="post">
-          <input type="text" name="name" placeholder="Имя" required>
-          <input type="email" name="email" placeholder="Логин" required>
-          <fieldset>
-              <div>
-                  <input type="password" name="password" placeholder="Пароль" required>
-                  <span>Минимум 8 символов</span>
-              </div>
-              <input type="password" name="repeat-password" placeholder="Повторите пароль" required>
-          </fieldset>
-          <fieldset>
-              <input type="submit" value="Зарегистрироваться">
-              <button type="button">Отмена</button>
-          </fieldset>
-          <button type="button">У меня уже есть аккаунт</button>
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="email" name="email" placeholder="Логин" required>
+        <fieldset>
+          <div>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <span>Минимум 8 символов</span>
+          </div>
+          <input type="password" name="repeat-password" placeholder="Повторите пароль" required>
+        </fieldset>
+        <fieldset>
+          <input type="submit" value="Зарегистрироваться">
+          <button type="button">Отмена</button>
+        </fieldset>
+        <button type="button">У меня уже есть аккаунт</button>
       </form>
-  </section>
-  <section>
-    <button type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
-    <h2>Войти</h2>
-    <form action="/" method="post">
+    </section>
+
+    <section class="entrance">
+      <button class="button" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+      <h2 class="entrance__title">Войти</h2>
+      <form class="form" action="/" method="post">
         <input type="email" name="email" placeholder="Логин" required>
         <input type="password" name="password" placeholder="Пароль" required>
         <fieldset>
-            <input type="submit" value="Войти">
-            <button type="button">Отмена</button>
+          <input type="submit" value="Войти">
+          <button type="button">Отмена</button>
         </fieldset>
         <button type="button">У меня еще нет аккаунта</button>
-    </form>
-</section>
+      </form>
+    </section>
   </main>
-  <footer>
 
+  <footer class="footer">
+    <p class="footer__text">Сайт создан Ивановой Ольгой, группа ИЯ-25</p> 
   </footer>
-  
+
 </body>
 
 </html>
